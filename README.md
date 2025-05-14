@@ -2,11 +2,43 @@
 
 Slab Generator is a Python script that generates slab structures from a given structure file (CONTCAR) using the pymatgen package.
 
-## Installation
+## Requirements
 
-Before using Slab Generator, make sure you have the pymatgen package installed. You can install it using pip:
+Before using Slab Generator, make sure the required Python packages are installed.
 
+### For the CLI version
+
+Install the `pymatgen` package:
+
+```bash
 pip install pymatgen
+```
+
+### For the GUI version
+
+The GUI requires both `pymatgen` and `ase`. To install `ase`, run:
+
+```bash
+pip install ase
+```
+
+### Install all dependencies at once
+
+To install all required packages for both the CLI and GUI versions, use:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Missing `tkinter`?
+
+If `tkinter` is missing in your Python environment (used for the GUI), install it using the following command (for Ubuntu/Debian systems):
+
+```bash
+sudo apt install python3-tk
+```
+
+> For other operating systems, install the appropriate `tkinter` package via your system's package manager.
 
 
 ## Usage
@@ -21,7 +53,7 @@ After providing the required inputs, the script will generate the slab structure
 
 Or you can run the GUI version of the code in the gui directory:
 
-python slab_creator+gui.py
+python slab_creator_gui.py
 
 then fill the required variables.
 
